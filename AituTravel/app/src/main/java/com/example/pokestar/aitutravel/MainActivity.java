@@ -63,7 +63,7 @@ public class MainActivity extends BaseActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.i_circle:
-                        replaceFragment(CircleFragment.newInstance());
+                        replaceFragment(CircleFragment.newInstance( "圈子"));
                         return true;
                     case R.id.i_discover:
                         replaceFragment(DiscoveryFragment.newInstance());
