@@ -29,7 +29,7 @@ public class CircleFragment extends BaseFragment {
     private TabLayout mTabLayout;
     private ViewPager mViewPager;
 
-    private List<CircleListFragment> circleListFragmentList;
+    private List<Fragment> circleListFragmentList;
 
     public CircleFragment() {
         // Required empty public constructor
@@ -99,9 +99,10 @@ public class CircleFragment extends BaseFragment {
 
     private void initData() {
         circleListFragmentList = new ArrayList<>();
-        for (int i = 0; i < 2; i++) {
-            circleListFragmentList.add(CircleListFragment.newInstance(i));
-        }
+//        for (int i = 0; i < 2; i++) {
+            circleListFragmentList.add(CircleListFragment.newInstance(0));
+        circleListFragmentList.add(fragment_address.newInstance());
+
     }
 
 

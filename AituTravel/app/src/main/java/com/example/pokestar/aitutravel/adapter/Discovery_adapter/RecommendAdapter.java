@@ -40,6 +40,18 @@ public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.View
         viewHolder.recommendtitle.setText(recommendItem.getRecommendtitle());
         viewHolder.recommendcontent.setText(recommendItem.getRecommendcontent());
         viewHolder.recommendvalue.setText(recommendItem.getRecommendvalue());
+        viewHolder.text_recommend.setText(recommendItem.getText_recommend());
+
+        viewHolder.recommendImage_one.setImageResource(recommendItem.getRecommendimage_one());
+        viewHolder.recommendtitle_one.setText(recommendItem.getRecommendtitle_one());
+        viewHolder.recommendcontent_one.setText(recommendItem.getRecommendcontent_one());
+        viewHolder.recommendvalue_one.setText(recommendItem.getRecommendvalue_one());
+
+        viewHolder.recommendImage_two.setImageResource(recommendItem.getRecommendimage_two());
+        viewHolder.recommendtitle_two.setText(recommendItem.getRecommendtitle_two());
+        viewHolder.recommendcontent_two.setText(recommendItem.getRecommendcontent_two());
+        viewHolder.recommendvalue_two.setText(recommendItem.getRecommendvalue_two());
+
     }
 
     @Override
@@ -50,14 +62,31 @@ public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.View
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView recommendImage;
-        private TextView recommendtitle,recommendcontent,recommendvalue;
+        private TextView recommendtitle, recommendcontent, recommendvalue, text_recommend;
+
+        private ImageView recommendImage_one;
+        private TextView recommendtitle_one, recommendcontent_one, recommendvalue_one;
+
+        private ImageView recommendImage_two;
+        private TextView recommendtitle_two, recommendcontent_two, recommendvalue_two;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recommendImage = (ImageView)itemView.findViewById(R.id.recommend_image);
-            recommendtitle = (TextView)itemView.findViewById(R.id.recommend_title);
-            recommendcontent = (TextView)itemView.findViewById(R.id.recommend_content);
-            recommendvalue = (TextView)itemView.findViewById(R.id.recommend_value);
+            text_recommend = (TextView) itemView.findViewById(R.id.text_recommend);
+            recommendImage = (ImageView) itemView.findViewById(R.id.recommend_image);
+            recommendtitle = (TextView) itemView.findViewById(R.id.recommend_title);
+            recommendcontent = (TextView) itemView.findViewById(R.id.recommend_content);
+            recommendvalue = (TextView) itemView.findViewById(R.id.recommend_value);
+
+            recommendImage_one = (ImageView) itemView.findViewById(R.id.recommend_image_one);
+            recommendtitle_one = (TextView) itemView.findViewById(R.id.recommend_title_one);
+            recommendcontent_one = (TextView) itemView.findViewById(R.id.recommend_content_one);
+            recommendvalue_one = (TextView) itemView.findViewById(R.id.recommend_value_one);
+
+            recommendImage_two = (ImageView) itemView.findViewById(R.id.recommend_image_two);
+            recommendtitle_two = (TextView) itemView.findViewById(R.id.recommend_title_two);
+            recommendcontent_two = (TextView) itemView.findViewById(R.id.recommend_content_two);
+            recommendvalue_two = (TextView) itemView.findViewById(R.id.recommend_value_two);
         }
     }
 }

@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -76,14 +77,19 @@ public class DiscoveryFragment extends BaseFragment {
         initData();
         recommendAdapter = new RecommendAdapter(recommendItems);
         mrecyclerView.setAdapter(recommendAdapter);
-        mrecyclerView.setLayoutManager(new LinearLayoutManager(context));
+        // 将滑动效果分成两列
+//        GridLayoutManager layoutManager = new GridLayoutManager(context, 2);
+        mrecyclerView.setLayoutManager(new LinearLayoutManager(container.getContext()));
         return view;
     }
 
     private void initData() {
         recommendItems = new ArrayList<>();
         for (int i = 0; i < 7; i++) {
-            recommendItems.add(new recommend_item(R.mipmap.ic_launcher,"汾河二库","环境优美，项目刺激","¥40起"));
+            recommendItems.add(new recommend_item(R.drawable.ic_picture_one,
+                    "汾河二库","环境优美，项目刺激","¥40起","当季推荐",
+                    R.drawable.ic_picture_two,"汾河二库","环境优美，项目刺激","¥40起",
+                    R.drawable.ic_picture_three,"汾河二库","环境优美，项目刺激","¥40起"));
         }
     }
 
