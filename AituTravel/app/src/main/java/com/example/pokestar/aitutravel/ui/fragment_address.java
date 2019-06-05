@@ -58,8 +58,8 @@ public class fragment_address extends BaseFragment {
         group_list.add("群组列表");
 
         item_lt = new ArrayList<String>();
-        item_lt.add("张三丰");
-        item_lt.add("董存瑞");
+        item_lt.add("张三");
+        item_lt.add("李四");
         item_lt.add("李大钊");
 
         item_list = new ArrayList<List<String>>();
@@ -80,17 +80,17 @@ public class fragment_address extends BaseFragment {
         item_list2.add(tmp_list);
         item_list2.add(tmp_list);
 
-        List<Integer> gr_list = new ArrayList<Integer>();
-        gr_list.add(R.drawable.ic_picture_eight);
-        gr_list.add(R.drawable.ic_picture_eight);
-        gr_list.add(R.drawable.ic_picture_eight);
-        gr_list.add(R.drawable.ic_picture_eight);
-
-        gr_list2 = new ArrayList<List<Integer>>();
-        gr_list2.add(gr_list);
-        gr_list2.add(gr_list);
-        gr_list2.add(gr_list);
-        gr_list2.add(gr_list);
+//        List<Integer> gr_list = new ArrayList<Integer>();
+//        gr_list.add(R.drawable.ic_picture_eight);
+//        gr_list.add(R.drawable.ic_picture_eight);
+//        gr_list.add(R.drawable.ic_picture_eight);
+//        gr_list.add(R.drawable.ic_picture_eight);
+//
+//        gr_list2 = new ArrayList<List<Integer>>();
+//        gr_list2.add(gr_list);
+//        gr_list2.add(gr_list);
+//        gr_list2.add(gr_list);
+//        gr_list2.add(gr_list);
 
         expandableListView = (ExpandableListView) view.findViewById(R.id.expendlist);
         expandableListView.setGroupIndicator(null);

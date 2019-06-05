@@ -1,48 +1,47 @@
 package com.example.pokestar.aitutravel.bean.discovery;
 
 public class recommend_item {
-    private int recommendimage;
+    private String url;
     private String recommendtitle;
     private String recommendcontent;
     private String recommendvalue;
     private String text_recommend;
 
-    private int recommendimage_one;
+    private String url_one;
     private String recommendtitle_one;
     private String recommendcontent_one;
     private String recommendvalue_one;
 
-    private int recommendimage_two;
+    private String url_two;
     private String recommendtitle_two;
     private String recommendcontent_two;
     private String recommendvalue_two;
 
-    public recommend_item(int recommendimage, String recommendtitle,
-                          String recommendcontent, String recommendvalue, String text_recommend,
-                          int recommendimage_one, String recommendtitle_one, String recommendcontent_one,
-                          String recommendvalue_one, int recommendimage_two, String recommendtitle_two,
+    public recommend_item(String url, String recommendtitle, String recommendcontent,
+                          String recommendvalue, String text_recommend, String url_one, String recommendtitle_one,
+                          String recommendcontent_one, String recommendvalue_one, String url_two, String recommendtitle_two,
                           String recommendcontent_two, String recommendvalue_two) {
-        this.recommendimage = recommendimage;
+        this.url = url;
         this.recommendtitle = recommendtitle;
         this.recommendcontent = recommendcontent;
         this.recommendvalue = recommendvalue;
         this.text_recommend = text_recommend;
-        this.recommendimage_one = recommendimage_one;
+        this.url_one = url_one;
         this.recommendtitle_one = recommendtitle_one;
         this.recommendcontent_one = recommendcontent_one;
         this.recommendvalue_one = recommendvalue_one;
-        this.recommendimage_two = recommendimage_two;
+        this.url_two = url_two;
         this.recommendtitle_two = recommendtitle_two;
         this.recommendcontent_two = recommendcontent_two;
         this.recommendvalue_two = recommendvalue_two;
     }
 
-    public int getRecommendimage() {
-        return recommendimage;
+    public String getUrl() {
+        return url;
     }
 
-    public void setRecommendimage(int recommendimage) {
-        this.recommendimage = recommendimage;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public String getRecommendtitle() {
@@ -77,12 +76,12 @@ public class recommend_item {
         this.text_recommend = text_recommend;
     }
 
-    public int getRecommendimage_one() {
-        return recommendimage_one;
+    public String getUrl_one() {
+        return url_one;
     }
 
-    public void setRecommendimage_one(int recommendimage_one) {
-        this.recommendimage_one = recommendimage_one;
+    public void setUrl_one(String url_one) {
+        this.url_one = url_one;
     }
 
     public String getRecommendtitle_one() {
@@ -109,12 +108,12 @@ public class recommend_item {
         this.recommendvalue_one = recommendvalue_one;
     }
 
-    public int getRecommendimage_two() {
-        return recommendimage_two;
+    public String getUrl_two() {
+        return url_two;
     }
 
-    public void setRecommendimage_two(int recommendimage_two) {
-        this.recommendimage_two = recommendimage_two;
+    public void setUrl_two(String url_two) {
+        this.url_two = url_two;
     }
 
     public String getRecommendtitle_two() {

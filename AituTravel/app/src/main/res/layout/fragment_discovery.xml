@@ -14,7 +14,7 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#f5ff3a">
+        android:background="#3ecafe">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +28,9 @@
                 android:layout_height="40dp"
                 android:layout_margin="5dp"
                 android:text="城市"
-                android:textSize="15sp" />
+                android:background="#3ecafe"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -109,7 +111,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#6cf6cf"
+                    android:background="#3ecafe"
                     android:text="红色旅游"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -122,7 +124,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#6cf6cf"
+                    android:background="#3ecafe"
                     android:text="情侣游"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -135,7 +137,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#6cf6cf"
+                    android:background="#3ecafe"
                     android:text="研学游"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -155,7 +157,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#6cf6cf"
+                    android:background="#3ecafe"
                     android:text="亲子游"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -169,7 +171,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#6cf6cf"
+                    android:background="#3ecafe"
                     android:text="户外探险"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -182,7 +184,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#6cf6cf"
+                    android:background="#3ecafe"
                     android:text="美食游"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -201,7 +203,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#6cf6cf"
+                    android:background="#3ecafe"
                     android:text="文化旅游"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -215,7 +217,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#6cf6cf"
+                    android:background="#3ecafe"
                     android:text="奥运游"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -228,7 +230,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#6cf6cf"
+                    android:background="#3ecafe"
                     android:text="郊游"
                     android:textSize="16sp"
                     android:textStyle="bold" />

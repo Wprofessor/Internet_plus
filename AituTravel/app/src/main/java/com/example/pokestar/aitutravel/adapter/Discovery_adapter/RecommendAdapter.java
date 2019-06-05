@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.pokestar.aitutravel.R;
 import com.example.pokestar.aitutravel.bean.discovery.recommend_item;
 
@@ -36,22 +37,22 @@ public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.View
     @Override
     public void onBindViewHolder(@NonNull RecommendAdapter.ViewHolder viewHolder, int i) {
         recommend_item recommendItem = recommend_items.get(i);
-        viewHolder.recommendImage.setImageResource(recommendItem.getRecommendimage());
+
         viewHolder.recommendtitle.setText(recommendItem.getRecommendtitle());
         viewHolder.recommendcontent.setText(recommendItem.getRecommendcontent());
         viewHolder.recommendvalue.setText(recommendItem.getRecommendvalue());
         viewHolder.text_recommend.setText(recommendItem.getText_recommend());
+        Glide.with(context).load(recommendItem.getUrl()).into(viewHolder.recommendImage);
 
-        viewHolder.recommendImage_one.setImageResource(recommendItem.getRecommendimage_one());
         viewHolder.recommendtitle_one.setText(recommendItem.getRecommendtitle_one());
         viewHolder.recommendcontent_one.setText(recommendItem.getRecommendcontent_one());
         viewHolder.recommendvalue_one.setText(recommendItem.getRecommendvalue_one());
+        Glide.with(context).load(recommendItem.getUrl_one()).into(viewHolder.recommendImage_one);
 
-        viewHolder.recommendImage_two.setImageResource(recommendItem.getRecommendimage_two());
         viewHolder.recommendtitle_two.setText(recommendItem.getRecommendtitle_two());
         viewHolder.recommendcontent_two.setText(recommendItem.getRecommendcontent_two());
         viewHolder.recommendvalue_two.setText(recommendItem.getRecommendvalue_two());
-
+        Glide.with(context).load(recommendItem.getUrl_two()).into(viewHolder.recommendImage_two);
     }
 
     @Override

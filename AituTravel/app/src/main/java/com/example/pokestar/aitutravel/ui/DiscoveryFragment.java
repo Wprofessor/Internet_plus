@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.example.pokestar.aitutravel.R;
 import com.example.pokestar.aitutravel.adapter.Discovery_adapter.RecommendAdapter;
 import com.example.pokestar.aitutravel.base.BaseFragment;
@@ -30,7 +31,7 @@ public class DiscoveryFragment extends BaseFragment {
     private List<View> mList = new ArrayList<>();
     private View view1, view2, view3;
     private ImageView point1, point2, point3;
-
+    private ImageView page_one,page_two,page_three;
 
     private RecyclerView mrecyclerView;
     private RecommendAdapter recommendAdapter;
@@ -85,12 +86,15 @@ public class DiscoveryFragment extends BaseFragment {
 
     private void initData() {
         recommendItems = new ArrayList<>();
-        for (int i = 0; i < 7; i++) {
-            recommendItems.add(new recommend_item(R.drawable.ic_picture_one,
-                    "汾河二库","环境优美，项目刺激","¥40起","当季推荐",
-                    R.drawable.ic_picture_two,"汾河二库","环境优美，项目刺激","¥40起",
-                    R.drawable.ic_picture_three,"汾河二库","环境优美，项目刺激","¥40起"));
-        }
+            recommendItems.add(new recommend_item("http://ww1.sinaimg.cn/large/0065JbNQly1g3p72joqqhj30u01e01ji.jpg",
+                    "樱花文化","汉服体验，樱花隧道，小动物，美食节","¥38起","当季推荐",
+                    "http://ww1.sinaimg.cn/large/0065JbNQly1g3p730foctj30fq0m8tgh.jpg","水密芭莎","各式温泉，影厅，书吧","¥149",
+                   "http://ww1.sinaimg.cn/large/0065JbNQly1g3p734a4jpj30fa0m811i.jpg","双岛之恋","吹海风，看日落","¥668起"));
+            recommendItems.add(new recommend_item("http://ww1.sinaimg.cn/large/0065JbNQly1g3p73awgsyj30u01901kx.jpg",
+                    "海盗传奇水世界","你准备好了吗?","¥128起","热门推荐",
+                    "http://ww1.sinaimg.cn/large/0065JbNQly1g3p73ffzh4j30ty0vv7b5.jpg","策马寻沙","鲜花草原&大漠驼铃","¥398起",
+                    "http://ww1.sinaimg.cn/large/0065JbNQly1g3p73in2nuj30om0l07aw.jpg","逃跑计划","激情漂流+星空露营+民营篝火","¥300起"));
+
     }
 
     private void initview() {
@@ -127,7 +131,13 @@ public class DiscoveryFragment extends BaseFragment {
         view1 = View.inflate(getContext(), R.layout.page_item_one, null);
         view2 = View.inflate(getContext(), R.layout.page_item_two, null);
         view3 = View.inflate(getContext(), R.layout.page_item_three, null);
+        page_one = view1.findViewById(R.id.page_one);
+        page_two = view2.findViewById(R.id.page_two);
+        page_three = view3.findViewById(R.id.page_three);
 
+        Glide.with(getContext()).load("http://ww1.sinaimg.cn/large/0065JbNQly1g3peusz9paj30oq09gwke.jpg").into(page_one);
+        Glide.with(getContext()).load("http://ww1.sinaimg.cn/large/0065JbNQly1g3pev2q0sdj30hs0axn0p.jpg").into(page_two);
+        Glide.with(getContext()).load("http://ww1.sinaimg.cn/large/0065JbNQly1g3pev6v9vwj31900ty4he.jpg").into(page_three);
         //view里面的控件
 
         mList.add(view1);
